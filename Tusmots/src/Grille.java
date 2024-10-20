@@ -18,9 +18,9 @@ public class Grille
         }
     }
 
-    public void TestMotLigne(int i, String MotTest)
+    public boolean TestMotLigne(int i, String MotTest)
     {
-        this.grilleMots[i].TesterMot(MotTest);
+        return this.grilleMots[i].TesterMot(MotTest);
     }
 
     public void AfficherGrille()

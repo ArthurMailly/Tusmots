@@ -4,15 +4,13 @@ public class Case
 {
     private Color couleur;
     private char lettre;
-    private int EtatCase; //1 = bonne lettre; 2 = lettre mal placée; 3 = mauvaise lettre
-    private boolean DejaVerifiee;
+    private int EtatCase; // 1 = bonne lettre; 2 = lettre mal placée; 3 = mauvaise lettre; 4 = lettre pas vérifiée
 
     public Case(char l, int etat)
     {
         this.lettre = l;
         this.EtatCase = etat;
         MajCouleur();
-        this.DejaVerifiee = false;
     }
 
     public Case(char l)
@@ -20,17 +18,15 @@ public class Case
         this.lettre = l;
         this.EtatCase = 3;
         MajCouleur();
-        this.DejaVerifiee = false;
     }
 
     public void BonneLettre(char l)
     {
-        this.DejaVerifiee = true;
         if ( l == this.lettre)
         {
             this.couleur = Color.green;
+            this.EtatCase = 1;
         }
-        this.EtatCase = 1;
     }
 
     public boolean EstCachee()

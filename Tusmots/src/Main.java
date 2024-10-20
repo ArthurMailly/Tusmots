@@ -1,17 +1,35 @@
+import java.util.Scanner;
+
 public class Main
 {
     public static void main(String[] args)
     {
-     Grille grille = new Grille("TAMANOIR", 6);
-     grille.AfficherGrille();
-     grille.AfficherEtats();
+        Scanner lectureClavier = new Scanner(System.in);
+        int nbrEssai = 6;
 
-     System.out.print("\n");
+        Grille grille = new Grille("TAMANOIR", nbrEssai);
+        grille.AfficherGrille();
+        grille.AfficherEtats();
 
-     grille.TestMotLigne(0, "TAMANOIR");
-     grille.AfficherGrille();
-     grille.AfficherEtats();
+        System.out.print("\n");
 
+        int NumeroDeLEssai = 0;
+
+        while (NumeroDeLEssai < nbrEssai)
+        {
+            System.out.println("Quel mot voulez-vous essayer ?");
+            String mot;
+
+            mot = lectureClavier.next();
+
+            if (grille.TestMotLigne(NumeroDeLEssai, mot))
+            {
+                grille.AfficherGrille();
+                grille.AfficherEtats();
+                NumeroDeLEssai++;
+            }
+
+        }
 
     }
 }
