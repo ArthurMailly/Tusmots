@@ -4,32 +4,35 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Scanner lectureClavier = new Scanner(System.in);
-        int nbrEssai = 6;
+        Tusmots_Interface test = new Tusmots_Interface();
+        test.setVisible(true);
 
-        Grille grille = new Grille("TAMANOIR", nbrEssai);
-        grille.AfficherGrille();
-        grille.AfficherEtats();
+        // Scanner lectureClavier = new Scanner(System.in);
+        // int nbrEssai = 6;
 
-        System.out.print("\n");
+        // Grille grille = new Grille("TAMANOIR", nbrEssai);
+        // grille.AfficherGrille();
+        // grille.AfficherEtats();
 
-        int NumeroDeLEssai = 0;
+        // System.out.print("\n");
 
-        while (NumeroDeLEssai < nbrEssai)
-        {
-            System.out.println("Quel mot voulez-vous essayer ?");
-            String mot;
+        // int NumeroDeLEssai = 0;
 
-            mot = lectureClavier.next();
+        // while (NumeroDeLEssai < nbrEssai)
+        // {
+        //     System.out.println("Quel mot voulez-vous essayer ?");
+        //     String mot;
 
-            if (grille.TestMotLigne(NumeroDeLEssai, mot))
-            {
-                grille.AfficherGrille();
-                grille.AfficherEtats();
-                NumeroDeLEssai++;
-            }
+        //     mot = lectureClavier.next();
 
-        }
+        //     if (grille.TestMotLigne(NumeroDeLEssai, mot))
+        //     {
+        //         grille.AfficherGrille();
+        //         grille.AfficherEtats();
+        //         NumeroDeLEssai++;
+        //     }
+
+        // }
 
     }
 }

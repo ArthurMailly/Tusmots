@@ -2,8 +2,8 @@ public class Grille
 {
     private int nbrEssai;
     private int tailleMot;
-    private Mot grilleMots[];
-    private String mot;
+    protected Mot grilleMots[];
+    protected String mot;
 
     public Grille(String mot, int nbrEssai)
     {
