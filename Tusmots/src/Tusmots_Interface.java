@@ -48,9 +48,18 @@ public class Tusmots_Interface extends JFrame {
         inputPanel.add(inputField);
         inputPanel.add(tryButton);
 
+        JPanel bottomPanel = new JPanel(new BorderLayout());
+        bottomPanel.add(stateArea, BorderLayout.CENTER);
+
+        JPanel legendPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        JLabel legendLabel = new JLabel("<html>B : Lettre bien placée<br>M : Lettre mal placée<br>X : Mauvaise lettre<br>_ : Pas encore vérifiée<br>? : Erreur</html>");
+        legendPanel.add(legendLabel);
+
+        bottomPanel.add(legendPanel, BorderLayout.EAST);
+
         add(new JScrollPane(gridArea), BorderLayout.CENTER);
-        add(new JScrollPane(stateArea), BorderLayout.SOUTH);
         add(inputPanel, BorderLayout.NORTH);
+        add(bottomPanel, BorderLayout.SOUTH);
 
         setVisible(true);
     }

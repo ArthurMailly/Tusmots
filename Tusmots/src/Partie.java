@@ -19,7 +19,12 @@ public class Partie {
     }
 
     public boolean estPartieTerminee() {
-        return numeroDeLEssai >= nbrEssai;
+        if(grille.MotTrouve(numeroDeLEssai-1) || numeroDeLEssai >= nbrEssai ) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public Grille getGrille() {
@@ -29,7 +34,7 @@ public class Partie {
     public int getNumeroDeLEssai() {
         return numeroDeLEssai;
     }
-    
+
     public int getNbrEssai() {
         return nbrEssai;
     }
