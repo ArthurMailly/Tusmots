@@ -19,6 +19,7 @@ public class Partie {
     }
 
     public boolean estPartieTerminee() {
+        // Voir cahier de labo pour explication du -1 ci-dessous
         if(grille.MotTrouve(numeroDeLEssai-1) || numeroDeLEssai >= nbrEssai ) {
             return true;
         }
