@@ -1,26 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Tusmots:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3afcd584-c43c-4782-8871-d830fc0b0356" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tusmots.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tusmots/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tusmots/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tusmots/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tusmots/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tusmots/Tusmots.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tusmots/src/Case.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Tusmots_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/xerial_sqlite_jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lexique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tusmots.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/Tusmots.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/src/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/src/Grille.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grille.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/src/Mot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/src/Partie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots/src/Tusmots_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tusmots_Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Audrey" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;thibaud-heub&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArthurMailly/Tusmots.git&quot;,
+    &quot;accountId&quot;: &quot;71455d2c-416f-4435-b621-6e58ce4f5368&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -32,21 +73,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/arthu/Desktop/Projets/Tusmots/Tusmots"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JAR Application.Tusmots.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev/database&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thibaud/IdeaProjects/Tusmots/out/artifacts/Tusmots_jar/Tusmots.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
-      </set>
-    </attachedChunks>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Thibaud\IdeaProjects\Tusmots" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tusmots" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Tusmots_jar/Tusmots.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Thibaud\IdeaProjects\Tusmots" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Tusmots:jar" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,5 +118,28 @@
       <updated>1729330984999</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev/database" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
