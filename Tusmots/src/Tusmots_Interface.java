@@ -2,12 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tusmots_Interface extends JFrame {
     private Partie partie;
     private JTextField inputField;
     private JTextArea gridArea;
     private JTextArea stateArea;
+    private String mot;
+    private List<String> ListeMotEntre;
 
     public Tusmots_Interface() {
         setTitle("Tusmots");
@@ -16,7 +20,7 @@ public class Tusmots_Interface extends JFrame {
         setLayout(new BorderLayout());
 
         partie = new Partie("TAMANOIR", 6);
-
+        ListeMotEntre = new ArrayList<>();
         gridArea = new JTextArea(10, 30);
         stateArea = new JTextArea(10, 30);
         gridArea.setEditable(false);
@@ -29,8 +33,9 @@ public class Tusmots_Interface extends JFrame {
         tryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String mot = inputField.getText().toUpperCase();
+                mot = inputField.getText().toUpperCase();
                 if (partie.testerMot(mot)) {
+                    ListeMotEntre.add(mot);
                     updateDisplay();
                     if (partie.estPartieTerminee()) {
                         JOptionPane.showMessageDialog(null, "Partie terminée !");
@@ -74,9 +79,13 @@ public class Tusmots_Interface extends JFrame {
         for (int i = 0; i < partie.getNbrEssai(); i++) {
             String ligneMot = grille.grilleMots[i].getMot();
             for (int j = 0; j < ligneMot.length(); j++) {
-                char c = grille.grilleMots[i].getCasePlace(j).getEtatCase() == 1
-                        ? ligneMot.charAt(j)
-                        : '_';               
+                char c;
+                if (i <= partie.getNumeroDeLEssai()-1){
+                    c = ListeMotEntre.get(i).charAt(j);
+                }
+                else {
+                    c = '_';
+                }              
                 gridText.append(c).append(" ");
             }
             gridText.append("\n");
