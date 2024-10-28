@@ -9,8 +9,12 @@ public class Partie {
         this.numeroDeLEssai = 0;
     }
 
+    public boolean testentre(String mot){
+        return mot.matches("[a-zA-Z]+");
+    }
+
     public boolean testerMot(String mot) {
-        if (mot.length() == grille.mot.length() && grille.TestMotLigne(numeroDeLEssai, mot)) {
+        if (grille.TestMotLigne(numeroDeLEssai, mot) && testentre(mot)) {
             numeroDeLEssai++;
             return true;
         } else {
