@@ -2,8 +2,8 @@ public class Grille
 {
     private int nbrEssai;
     private int tailleMot;
-    private Mot grilleMots[];
-    private String mot;
+    protected Mot grilleMots[];
+    protected String mot;
 
     public Grille(String mot, int nbrEssai)
     {
@@ -41,5 +41,14 @@ public class Grille
 
             System.out.println(" ");
         }
+    }
+
+    public boolean MotTrouve(int num_essai) {
+        for(int i = 0; i < this.grilleMots[num_essai].getMot().length(); i++){
+            if (this.grilleMots[num_essai].getCasePlace(i).getEtatCase() != 1 ) {
+                return false;
+            }
+        }
+        return true;
     }
 }
