@@ -16,7 +16,7 @@ public class finalscreen extends JFrame {
         messageLabel.setFont(new Font("Arial", Font.BOLD, 18));
         messageLabel.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
 
-        JButton menuButton = new JButton("Menu");
+        JButton menuButton = new JButton("Menu Principal");
         JButton quitButton = new JButton("Quitter");
 
         Font buttonFont = new Font("Arial", Font.PLAIN, 14);
@@ -52,9 +52,10 @@ public class finalscreen extends JFrame {
         });
 
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 10));
+        buttonPanel.setLayout(new GridLayout(3, 1, 10, 10));
         buttonPanel.add(menuButton);
         buttonPanel.add(quitButton);
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50)); 
         buttonPanel.setOpaque(false);
 
         getContentPane().setBackground(new Color(240, 248, 255));
