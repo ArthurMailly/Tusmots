@@ -4,7 +4,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Tusmots_Interface test = new Tusmots_Interface();
+        menu test = new menu();
         test.setVisible(true);
 
         // Scanner lectureClavier = new Scanner(System.in);
