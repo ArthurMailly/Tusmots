@@ -21,7 +21,8 @@ public class Tusmots_Interface extends JFrame {
 
         getContentPane().setBackground(new Color(240, 248, 255));
 
-        partie = new Partie("TAMANOIR", 6);
+        partie = new Partie(mot=Lexique.motAleatoire().getMot(), 6);
+        System.out.println("Mot à trouver : " + mot);
         ListeMotEntre = new ArrayList<>();
 
 
@@ -58,7 +59,7 @@ public class Tusmots_Interface extends JFrame {
                         dispose();
                     }
                 } else {
-                    JOptionPane.showMessageDialog(null, "Mot invalide ou longueur incorrecte.");
+                    new InvalidAction().display();
                 }
                 inputField.setText("");
             }

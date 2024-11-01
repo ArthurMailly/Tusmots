@@ -9,13 +9,17 @@ public class Partie {
         this.numeroDeLEssai = 0;
     }
 
-    public boolean testentre(String mot){
+    public boolean testentre(String mot){//Vérifie si le mot est composé uniquement de lettres
         return mot.matches("[a-zA-Z]+");
     }
+    public boolean testExistence(String mot) { //Appelle l'insatnce de Lexique pour vérifier si le mot existe, Thibaud avait codé la méthode motExiste dans Lexique.java, donc cette méthode relie le code de Thibaud avec le mien
+        return Lexique.motExiste(new Mot(mot));
+    }
 
-    public boolean testerMot(String mot) {
-        if (grille.TestMotLigne(numeroDeLEssai, mot) && testentre(mot)) {
+    public boolean testerMot(String mot) {// Renvoie le même message d'erreur pour les 3 erreurs(nb essais dépassé,mot pas composé de lettres, mot qui n'est pas dans la DB), on pourrais peut etre changer ?
+        if (grille.TestMotLigne(numeroDeLEssai, mot) && testentre(mot) && testExistence(mot)) {
             numeroDeLEssai++;
+            
             return true;
         } else {
             return false;
