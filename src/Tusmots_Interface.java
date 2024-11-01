@@ -59,7 +59,8 @@ public class Tusmots_Interface extends JFrame {
                         dispose();
                     }
                 } else {
-                    new InvalidAction().display();
+                    new InvalidAction(Tusmots_Interface.this).display();
+
                 }
                 inputField.setText("");
             }
