@@ -9,8 +9,12 @@ public class Partie {
         this.numeroDeLEssai = 0;
     }
 
+    public boolean testentre(String mot){
+        return mot.matches("[a-zA-Z]+");
+    }
+
     public boolean testerMot(String mot) {
-        if (mot.length() == grille.mot.length() && grille.TestMotLigne(numeroDeLEssai, mot)) {
+        if (grille.TestMotLigne(numeroDeLEssai, mot) && testentre(mot)) {
             numeroDeLEssai++;
             return true;
         } else {
@@ -18,13 +22,19 @@ public class Partie {
         }
     }
 
-    public boolean estPartieTerminee() {
+    public int estPartieTerminee() {
         // Voir cahier de labo pour explication du -1 ci-dessous
-        if(grille.MotTrouve(numeroDeLEssai-1) || numeroDeLEssai >= nbrEssai ) {
-            return true;
+        // 1 pour victoire, 2 pour défaite, 0 partie pas terminée
+        if(grille.MotTrouve(numeroDeLEssai-1) ) {
+            return 1;
         }
         else {
-            return false;
+            if (numeroDeLEssai >= nbrEssai){
+                return 2;
+            }
+            else {
+                return 0;
+            }
         }
     }
 
