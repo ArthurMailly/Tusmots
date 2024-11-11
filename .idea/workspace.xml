@@ -10,11 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3afcd584-c43c-4782-8871-d830fc0b0356" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/rsrc/lexique.db" beforeDir="false" afterPath="$PROJECT_DIR$/rsrc/lexique.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lexique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexique.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Partie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tusmots_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tusmots_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Tusmots_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/xerial_sqlite_jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/xerial_sqlite_jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tusmots.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tusmots.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Audrey" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +61,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
     "JAR Application.Tusmots.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -70,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Dev__Fares",
+    "git-widget-placeholder": "test/compilation",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Thibaud/IdeaProjects/Tusmots/out/artifacts/Tusmots_jar/Tusmots.jar",
     "project.structure.last.edited": "Modules",
@@ -82,18 +83,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Thibaud\IdeaProjects\Tusmots" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Tusmots" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Tusmots_jar/Tusmots.jar" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Thibaud\IdeaProjects\Tusmots" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Tusmots:jar" />
-        </option>
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
